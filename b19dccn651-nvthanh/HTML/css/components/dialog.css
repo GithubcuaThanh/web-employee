@@ -1,0 +1,104 @@
+.m-dialog{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000010;
+    z-index: 10000;
+}
+
+.m-dialog .m-dialog-content{
+    position: absolute;
+    width: 500px;
+    /* height: 100%; */
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    max-height: 100%;
+    margin-top: 5px;
+    /* margin-bottom: 5px; */
+}
+
+.m-dialog .m-dialog-header{
+    width: 100%;
+    padding: 24px;
+}
+
+.m-dialog .m-dialog-body{
+    padding: 0 24px 24px;
+    position: relative;
+}
+
+
+.m-dialog .m-dialog-header button.m-dialog-close{
+    position: absolute;
+    text-align: center;
+    line-height: 20px;
+    color: red;
+    font-size: 20px;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+    border-radius: 4px;
+    background-repeat:  no-repeat;
+}
+
+.m-dialog .m-dialog-header button.m-dialog-close:hover{
+    background-color: #ccc;
+}
+
+.m-dialog .m-dialog-footer{
+    /* position: absolute; */
+    width: 100%;
+    height: 56px;
+    text-align: right;
+    padding-right: 16px;
+    bottom: 0;
+    box-sizing: border-box;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* margin-bottom: 5px; */
+}
+
+.m-dialog .m-dialog-title-body{
+    position: relative;
+}
+
+.m-dialog .m-dialog-title-body::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 67px;
+    background-color: #019160;
+    /* border-radius: 8px; */
+}
+
+.m-dialog .m-dialog-body .m-dialog-fields{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.m-dialog .m-dialog-body .m-dialog-fields .m-dialog-fields-title{
+    display: block;
+    margin-bottom: 8px;
+    flex-direction: column;
+    width: -5px;
+    /* background-color: blue; */
+}
